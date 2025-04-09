@@ -1,76 +1,120 @@
 /* Reinicio básico */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-  }
-  
-  /* Imagen de fondo para el body */
-  body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Contenedor principal */
-  .container {
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: auto;
-    max-width: 800px;
-    padding: 20px;
-  }
-  
-  /* Header: logo alineado a la izquierda */
-  header {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-  }
-  header .logo img {
-    width: 100px;
-  }
-  
-  /* Estilos del main y secciones */
-  main {
-    padding: 10px 0;
-  }
-  
-  /* Footer: información de identificación */
-  footer {
-    border-top: 1px solid #ccc;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  /* Opcional: Estilos para la sección CRUD */
-  .crud {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #aaa;
-    background-color: #f9f9f9;
-  }
-  .crud form {
-    display: flex;
-    flex-direction: column;
-  }
-  .crud form label {
-    margin-top: 5px;
-  }
-  .crud form input, .crud form textarea {
-    padding: 5px;
-    margin-top: 5px;
-  }
-  .crud form button {
-    margin-top: 10px;
-    padding: 8px;
-  }
-  .item {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  .item button {
-    margin-right: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+/* Imagen de fondo con superposición oscura para legibilidad */
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Contenedor principal con estilo moderno */
+.container {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 40px auto;
+  max-width: 850px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* Header con logo */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+header .logo img {
+  width: 100px;
+}
+
+/* Secciones principales */
+main {
+  padding: 20px 0;
+}
+
+/* Footer con estilo */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* CRUD */
+.crud {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.crud form {
+  display: flex;
+  flex-direction: column;
+}
+
+.crud form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+.crud form input,
+.crud form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.crud form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.crud form button:hover {
+  background-color: #0288d1;
+}
+
+/* Ítems de la lista */
+.item {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.item button:hover {
+  background-color: #c2185b;
+}

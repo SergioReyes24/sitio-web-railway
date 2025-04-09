@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web con Base de Datos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo del Sitio">
+      </div>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main>
+      <h1>Bienvenido a mi aplicación web</h1>
+      <p>Visita este enlace para ver un video en streaming:</p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ver Video</a>
+      
+      <!-- Sección para operaciones CRUD -->
+      <section class="crud">
+        <h2>Gestión de Registros</h2>
+        <form id="itemForm">
+          <input type="hidden" id="itemId" name="itemId" value="">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="description">Descripción:</label>
+          <textarea id="description" name="description" required></textarea>
+          <button type="submit">Guardar</button>
+        </form>
+        <div id="itemsList">
+          <!-- Aquí se mostrarán los registros -->
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <p>Curso: [Nombre del Curso]</p>
+      <p>Nombre: [Tu Nombre Completo]</p>
+      <p>Código: [Tu Código]</p>
+      <p>Correo: [tuemail@dominio.com]</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
